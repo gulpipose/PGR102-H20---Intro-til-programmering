@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 3 - Oppgave 1</title>
+    </head>
+    <body>
+
+    </body>
+    
+    <script>
+        
+        /*
+        Her bruker vi parseInt for å gjøre om det brukeren skriver inn i input-feltene om til tall, eller såkalte integers.
+        
+        parseInt() er en metode vi kan kalle på. Det vi skriver mellom parentesene er det som vil bli konvertert om til en integer.
+        
+        Vi vet allerede at prompt("Skriv inn noe her"); gir oss tilbake det brukeren skriver inn i inputfeltet, 
+        
+        Så når man legger parseInt rundt prompt(): parseInt(prompt("Skriv inn noe her)); 
+        
+        Sier man altså at man vil konvertere det som kommer fra input-feltet i prompten om til et tall!
+        */
+        var number1 = parseInt(prompt("Skriv inn et tall"));
+        var number2 = parseInt(prompt("Skriv inn et tall til"));
+        
+        //En ny variabel, der innholdet er tallene lagt sammen
+        var result = number1 + number2;
+        
+        //Alert-er resultatet. 
+        alert(result);
+    
+    </script>
+</html> 

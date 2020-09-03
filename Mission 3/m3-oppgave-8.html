@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 3 - Oppgave 1</title>
+    </head>
+    <body>
+        <p id="tekst"></p>
+    </body>
+    
+    <script>
+        
+        //Når man kaller på prompt gir den tilbake det brukeren skrev i input-feltet. Her lagrer jeg det i en variabel så vi kan putte det inn i p-tagen senere i koden.
+        var userInput = prompt("Skriv det første du kommer på her(ord/setning)");
+        
+        //Henter inn p-tagen i en variabel så vi kan endre den.
+        var pTag = document.getElementById("tekst");
+        
+        //Setter innsiden av p-tagen til å inneholde teksten brukeren skrev inn. 
+        pTag.innerHTML = userInput;
+        
+    </script>
+</html> 

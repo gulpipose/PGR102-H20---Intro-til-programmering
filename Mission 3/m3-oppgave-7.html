@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 3 - Oppgave 1</title>
+    </head>
+    <body>
+    
+        <p id="dikt"></p>
+        
+    </body>
+    
+    <script>
+        
+        //Henter <p>-tagen basert på ID-en dens og legger den til i en variabel. 
+        var pTag = document.getElementById("dikt");
+        
+        //Bruker innerHTML funksjonen på variabelen med <p>-tagen 
+        pTag.innerHTML = "To, ikke én, personer sitter og skriver JS-dikt sammen mens det regner utenfor, og de regner med å skrive om regn og skriving";
+        
+        /*Bruker man inspect-tool på siden i Chrome nå, vil man se at html-koden er: 
+        
+        <p id="dikt">To, ikke én, personer sitter og skriver JS-dikt sammen mens det regner utenfor, og de regner med å skrive om regn og skriving</p>. 
+        
+        Her har vi altså endret inneholdet i <p>-tagen programmatisk!*/
+        
+    </script>
+</html> 
