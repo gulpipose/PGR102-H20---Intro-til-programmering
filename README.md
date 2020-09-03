@@ -9,7 +9,7 @@ Løsningsforslag til oppgaver og materiell fra repetisjonsforelesningene i PGR10
 * [Oppgave 4](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3-oppgave-4.html)
 * [Oppgave 5](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3-oppgave-5.html)
 * [Oppgave 7](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3-oppgave-7.html)
-* [Oppgave 8](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3-oppgave-7.html)
+* [Oppgave 8](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3-oppgave-8.html)
 
 
 ### Mission 3B
