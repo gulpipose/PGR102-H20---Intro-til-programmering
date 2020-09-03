@@ -2,7 +2,7 @@
 Løsningsforslag til oppgaver og materiell fra repetisjonsforelesningene i PGR102.
 
 
-### Mission 3
+### Mission 3 - Variabler, input og output
 * [Oppgave 1](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3-oppgave-1.html)
 * [Oppgave 2](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3-oppgave-2.html)
 * [Oppgave 3](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3-oppgave-3.html)
@@ -12,6 +12,6 @@ Løsningsforslag til oppgaver og materiell fra repetisjonsforelesningene i PGR10
 * [Oppgave 8](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3-oppgave-8.html)
 
 
-### Mission 3B
+### Mission 3B - Variabler, input og output
 * [Oppgave 1](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3B-oppgave-1.html "Oppgave 1")
 * [Oppgave 2](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3B-oppgave-2.html "Oppgave 2")
