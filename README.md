@@ -7,9 +7,10 @@ Løsningsforslag til oppgaver og materiell fra repetisjonsforelesningene i PGR10
 
 * [Slides - pdf](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Slides/Repetisjonsforelesning%20-%201.pdf)
 * [Slides - pptx](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Slides/Repetisjonsforelesning%20-%201.pptx)
-
 * [Kode](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/if-else.html)
 
+
+## Løsningsforslag - missions
 
 ### Mission 3 - Variabler, input og output
 * [Oppgave 1](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3-oppgave-1.html)
