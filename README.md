@@ -13,5 +13,5 @@ Løsningsforslag til oppgaver og materiell fra repetisjonsforelesningene i PGR10
 
 
 ### Mission 3B - Variabler, input og output
-* [Oppgave 1](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3B-oppgave-1.html "Oppgave 1")
-* [Oppgave 2](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203/m3B-oppgave-2.html "Oppgave 2")
+* [Oppgave 1](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203B/m3B-oppgave-1.html "Oppgave 1")
+* [Oppgave 2](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%203B/m3B-oppgave-2.html "Oppgave 2")
