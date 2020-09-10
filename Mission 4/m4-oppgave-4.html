@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 3 - Oppgave 1</title>
+    </head>
+    <body>
+
+    </body>
+    
+    <script>
+        
+        //Variabel med passordet til brukeren
+        var password = `KjempesterktPassord`;
+        //Variabel med saldoen til brukeren
+        var saldo = 100000;
+        
+        //Prompter brukeren for passordet til kontoen
+        var userInput = prompt(`Tast inn passordet!`);
+        
+        if(userInput == password){
+           
+            //Hvis passordet er riktig viser vi brukeren inneholdet i saldo-variabelen ved bruk av template literals.
+            alert(`Du har ${saldo} på konto`);
+            
+        } else {
+    
+            alert(`passordet er feil!`);
+        }
+        
+    </script>
+</html> 

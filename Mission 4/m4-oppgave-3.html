@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 3 - Oppgave 1</title>
+    </head>
+    <body>
+
+    </body>
+    
+    <script>
+        //Variabel med et hemmelig heltall
+        var secretNumber = 8;
+        
+        //Prompter brukeren, og legger det de svarer i en variabel.
+        var userAnswer = prompt(`Gjett et tall mellom 1 og 10`);
+        
+        /* 
+        Her lager jeg en kontrollstruktur som først sjekker om det brukeren har skrevet er det samme som det hemmelige tallet.
+        
+        Om det ikke stemmer bruker jeg ELSE IF til å sjekke om det hemmelige tallet er mindre skrev enn det brukeren svarte.
+        
+        Om det ikke stemmer bruker jeg ELSE IF til å sjekke om det hemmelige tallet er høyere skrev enn det brukeren svarte.
+        */
+        
+        //Sjekker om det brukeren svarte var det samme som det hemmelige tallet!
+        if(userAnswer == secretNumber){
+           
+            //Hvis det brukeren har svart er det samme som det hemmelige tallet, skal alerten være positiv!
+            alert(`Det stemmer! Det hemmelige tallet var 8`);
+          
+            
+        } else if(userAnswer>secretNumber){
+            
+            alert(`Det hemmelige tallet er mindre enn det du gjettet`);
+        
+        } else if(userAnswer<secretNumber){
+            
+            alert(`Det hemmelige tallet er større enn det du gjettet`);
+        
+        }
+    </script>
+</html> 

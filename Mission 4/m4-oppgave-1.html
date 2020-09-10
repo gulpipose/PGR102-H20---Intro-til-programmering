@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 3 - Oppgave 1</title>
+    </head>
+    <body>
+
+    </body>
+    
+    <script>
+        //Lager en variabel med det hemmelige ordet.
+        var secretWord = `koding`;
+        
+        //Prompter brukeren, og legger det de svarer i en variabel.
+        var userAnswer = prompt(`Hva er det hemmelige ordet? Hint: du lærer deg det i PGR102`);
+        
+        /*
+        Her lager jeg en kontrollstruktur som sjekker om innholdet i variabelen secretWord er det samme som innholdet i variabelen userAnswer. 
+        
+        Det som kommer i den første kodeblokken er koden som kjøres hvis ordet er riktig.
+        
+        Det som kommer i den andre kodeblokken(etter ELSE), er koden som kjøres hvis ordet er feil. 
+        */
+        
+        
+        if(userAnswer == secretWord){
+           
+            //Hvis det brukeren har svart er det samme som det hemmelige ordet, skal alerten være positiv!
+            alert(`Det stemmer! I PGR102 lærer man koding :)`);
+            
+        } else {
+            
+            //Hvis det brukeren har svart er forskjellig fra det hemmelige ordet, skal alerten være negativ!
+            alert(`Det var dessverre feil, kanskje du kan spørre noen om hjelp?`);
+        
+        }
+        
+    </script>
+</html> 

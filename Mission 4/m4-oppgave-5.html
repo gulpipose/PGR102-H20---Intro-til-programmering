@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 3 - Oppgave 1</title>
+    </head>
+    <body>
+
+    </body>
+    
+    <script>
+        
+        //Variabel med passordet til brukeren
+        var password = `KjempesterktPassord`;
+        //Variabel med saldoen til brukeren
+        var saldo = 100000;
+        
+        //Prompter brukeren for passordet til kontoen
+        var userInput = prompt(`Tast inn passordet!`);
+        
+        if(userInput == password){
+           
+            //Legger det brukeren svarer i prompt-en inn i en variabel.
+            var draftAmount = prompt(`Du har ${saldo} på konto, hvor mye vil du ta ut?`);
+            
+            
+            /*
+            Å trekke fra og legge til noe i en variabel er noe som gjøres så ofte at man har en egen forkortet måte å gjøre det på i mange kodespråk: -= og +=.
+            
+            Å skrive:
+            saldo -= draftAmount 
+            
+            Er derfor akkurat det samme som å skrive:
+            
+            saldo = saldo - draftAmount;
+            
+            Det er bare litt raskere å skrive :) */
+            
+            //Endrer saldoen, ved å trekke fra det brukeren ville ta ut. 
+            saldo -= draftAmount;
+            
+            //Prompter den nye saldoen, så brukeren vet hvor mye som er igjen på kontoen.
+            prompt(`Du har nå ${saldo} igjen på konto`);
+            
+        } else {
+    
+            alert(`passordet er feil!`);
+        }
+        
+    </script>
+</html> 
