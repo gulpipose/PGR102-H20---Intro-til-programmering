@@ -42,3 +42,10 @@ Løsningsforslag til oppgaver og materiell fra repetisjonsforelesningene i PGR10
 * [Oppgave 4](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%205/m5-oppgave-4.html "Oppgave 4")
 * [Oppgave 5](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%205/m5-oppgave-5.html "Oppgave 5")
 * [Oppgave 6](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%205/m5-oppgave-6.html "Oppgave 6")
+
+### Mission 5B - Funksjoner og Event
+* [Oppgave 1](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%205B/m5B-oppgave-1.html "Oppgave 1")
+* [Oppgave 2](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%205B/m5B-oppgave-2.html "Oppgave 2")
+* [Oppgave 3](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%205B/m5B-oppgave-3.html "Oppgave 3")
+* [Oppgave 4](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%205B/m5B-oppgave-4.html "Oppgave 4")
+* [Oppgave 5](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Mission%205B/m5B-oppgave-5.html "Oppgave 5")
