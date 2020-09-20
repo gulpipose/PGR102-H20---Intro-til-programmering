@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 5B - Oppgave 1</title>
+    </head>
+    <body>
+    
+        <h1>Sportsbilder</h1>
+        
+        <!-- Inputfelt der brukeren skal skrive inn sporten de vil ha bilde av -->
+        <label>Skriv hockey, fekting, fotball eller boksing</label>
+        <input id="input-field" type="text">
+        <input id="input-btn" type="button" value="Vis bilde">
+        <br>
+        <img id="sport-image">
+        
+    </body>
+    
+    <script>
+
+        //Setter onClick på knappen til å være funksjonen displaySport som viser bildet basert på input
+        document.getElementById("input-btn").onclick = displaySport;
+        
+        
+        //Funksjonen som kalles når knappen blir trykket på sjekker hvilken sport det er og sender inn 
+        function displaySport() {
+        
+            //Henter inn verdien i inputfeltet ved å bruke .value metoden.
+            var sport = document.getElementById("input-field").value; 
+            
+            //Henter inn img-tagen fra html
+            var sportImg = document.getElementById("sport-image");
+            
+            //Her setter jeg bredden på bildet, er ikke en del av oppgaven, men siden jeg henter bilder fra nettet er det fint å gjøre så de ikke er gigantiske!
+            sportImg.style.width = "40vw";
+
+            if(sport === "hockey") {
+                sportImg.src = "https://static01.nyt.com/images/2020/05/07/sports/07nhl-sexism1/merlin_169070070_3c1d296b-5835-4a50-9227-15a2ca6db953-superJumbo.jpg"
+                
+            } else if(sport === "fekting") {
+                
+                sportImg.src = "https://azure.content.bloc.net/redactor/200000195/1964/2017/1/17/webillus.jpg"
+                
+            } else if(sport === "fotball") {
+                
+                sportImg.src = "https://akamai.vgc.no/v2/images/89c0320b-1be2-4d12-9bc0-46570f7f13f8?fit=crop&h=1110&w=1900&s=d2c3c97122c1fb9bfed35d0d6c544d91f7135ed9"
+                
+            } else if(sport === "boksing") {
+                
+                sportImg.src = "https://media.snl.no/media/55556/article_topimage_tc4f6c66.jpg";
+            }
+        }
+        
+    </script>
+</html> 

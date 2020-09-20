@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 5B - Oppgave 3</title>
+    </head>
+    <body>
+    
+        <h1>Teste to betingelser med || </h1>
+        
+        <!-- Inputfelt der brukeren skal skrive inn sporten de vil ha bilde av -->
+        <label>Du får kun lov til å skrive banan eller eple!</label>
+        <input id="input-field" type="text">
+        <input id="input-btn" type="button" value="inntastet">
+
+        <p id="response-paragraph"></p>
+        
+    </body>
+    
+    <script>
+
+        //Setter onClick på knappen til å være funksjonen checkInput
+        document.getElementById("input-btn").onclick = checkInput;
+        
+        //Henter listen som skal inneholde outputen fra HTML.
+        var outputParagraph = document.getElementById("response-paragraph");
+        
+        //Når denne funksjonen sjekker den om inputen stemmer i forhold til det vi vil ha
+        function checkInput() {
+            
+            //Henter det brukeren har skrevet i inputfeltet.
+            var userInput = document.getElementById("input-field").value;
+            
+            //Bruker || i kontrollstrukturen for å sjekke om userInput er banan eller eple
+            if(userInput === "banan" || userInput === "eple"){
+                
+                //Hvis brukeren skriver inn banan ELLER eple, så skal de få positiv respons!
+                outputParagraph.innerHTML = `Hurra du valgte noe som er sunt! Du skrev ${userInput} og er dermed ${userInput}-kongen`;
+                
+            } else {
+                
+                //I alle andre tilfeller, altså når brukeren har skrevet inn noe annet skal de få negativ respons.
+                outputParagraph.innerHTML = `Ehem! Det er ikke lov å skrive noe annet enn banan eller eple`;
+                
+            }
+            
+        }
+        
+    </script>
+</html> 

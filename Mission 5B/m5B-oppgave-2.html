@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 5B - Oppgave 2</title>
+    </head>
+    <body>
+    
+        <h1>Skriv inn noe og få det med store og små bokstaver</h1>
+        
+        <!-- Inputfelt der brukeren skal skrive inn sporten de vil ha bilde av -->
+        <label>Skriv inn noe her</label>
+        <input id="input-field" type="text">
+        <input id="input-btn" type="button" value="Vis ord i store/små bokstaver">
+
+        <ul id="output-list"></ul>
+        
+    </body>
+    
+    <script>
+
+        //Setter onClick på knappen til å være funksjonen checkSport som sjekker sporten
+        document.getElementById("input-btn").onclick = displayCasedText;
+        
+        //Henter listen som skal inneholde outputen fra HTML.
+        var list = document.getElementById("output-list");
+        
+        //Funksjonen "skriver ut" teksten i store og små bokstaver i en liste
+        function displayCasedText() {
+        
+            //Henter inn verdien i inputfeltet ved å bruke .value metoden.
+            var inputText = document.getElementById("input-field").value; 
+            
+            //Her bruker jeg upper og lowercase-metodene "inni" template literalen, så slipper jeg å lage mange variabler
+            list.innerHTML = `<li>Slik du skrev det: ${inputText}</li>
+                            <li>Upper case: ${inputText.toUpperCase()}</li>
+                            <li>Lower case: ${inputText.toLowerCase()}</li>`;
+            
+        }
+        
+    </script>
+</html> 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 5B - Oppgave 4</title>
+    </head>
+    <body>
+    
+        <h1>Tast inn passordene for å komme inn i hvelvet</h1>
+        
+        <!-- To inputfelt for de to passordene de må skrive inn -->
+        <label>Passord 1</label>
+        <input id="password1-input-field" type="text">
+        
+        <label>Passord 2</label>
+        <input id="password2-input-field" type="text">
+        <input id="input-btn" type="button" value="OK">
+
+        <h3 id="response-text"></h3>
+        <img id="winner-img">
+        
+    </body>
+    
+    <script>
+
+        //Setter onClick på knappen til å være funksjonen checkSport som sjekker sporten
+        document.getElementById("input-btn").onclick = checkPasswords;
+        
+        //Henter ut h3-tagen og img-tagen fra HTML-dokumentet.
+        var outputText = document.getElementById("response-text");
+        var outputImg = document.getElementById("winner-img");
+        
+        //Funksjonen sjekker om begge passordene stemmer
+        function checkPasswords() {
+            
+            //Henter det brukeren har skrevet i passord1-feltet
+            var password1 = document.getElementById("password1-input-field").value;
+            //Henter det brukeren har skrevet i passord2-feltet
+            var password2 = document.getElementById("password2-input-field").value;
+            
+            //Bruker && for å sjekke at både passord 1 OG passord 2 er riktig
+            if(password1 === "hemmeligpassord1" && password2 === "hemmeligpassord2"){
+                
+                //Hvis de er det skal brukeren få en hyggelig melding
+                outputText.innerHTML = `HURRA! Du er rik :D`;
+                
+                //Vi setter src(kilden) til img-tagen til å være seiersbildet brukeren skal få se
+                outputImg.src = "https://www.careeraddict.com/uploads/article/3802/candidate-1687175-2015-04-15-14-28-46.jpg"
+               
+                
+            } else {
+                //Hvis en av passordene er feil, eller begge får de ikke masse rikdom
+                outputText.innerHTML = "Det var dessverre feil... ingen hemmelig skatt for deg";
+            }
+            
+        }
+        
+    </script>
+</html> 
