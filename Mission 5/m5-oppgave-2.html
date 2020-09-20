@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 5 - Oppgave 2</title>
+    </head>
+    <body>
+
+        <h1>Hvor mange ganger greier du å klikke?</h1>
+        
+        <!-- Lager en inputknapp av typen button -->
+        <input type="button" id="count-btn" value="Tell opp">
+        
+        <!-- en p-tag der antall ganger brukeren har klikket skal dukke opp -->
+        <p id="btn-clicked-paragraph">Antall ganger klikket: 0</p>
+        
+    </body>
+    
+    <script>
+        
+        //henter knappen fra html og legger den i en variabel
+        var countBtn = document.getElementById("count-btn");
+        
+        //setter knappens onClick-property til å kjøre clickedBtn funksjonen
+        countBtn.onclick = clickedBtn;
+        
+        //Lager en counter som teller hvor mange ganger brukeren har klikket.
+        var counter = 0;
+        
+        
+        //Funksjonen som skal kjøres hver gang brukeren trykker på knappen
+        function clickedBtn () {
+            //Legger til 1 i counteren siden knappen har blitt trykket på
+            counter++;
+            
+            //Henter p-tagen der antall ganger brukeren har trykket på knappen skal stå
+            var btnClickedParagraph = document.getElementById("btn-clicked-paragraph");
+            
+            //Setter teksten innenfor p-tagen til å bruke tallet fra counteren.
+            btnClickedParagraph.innerHTML = `Antall ganger klikket: ${counter}`;
+            
+        }
+        
+    </script>
+</html> 

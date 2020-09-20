@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 5 - Oppgave 5</title>
+    </head>
+    <body>
+
+        <h1>Adder to tall</h1>
+        
+        <!-- Knapp brukeren skal trykke på for å kunne skrive inn tallene -->
+        <input id="calculation-btn" type="button" value="Adder to tall">
+        
+        <!-- En p-tag der regnestykket skal dukke opp -->
+        <p id="calculation"></p>
+        
+    </body>
+    
+    <script>
+        //Henter inn knappen og setter onClick til adderingsFunksjonen
+        var calculationBtn = document.getElementById("calculation-btn");
+        calculationBtn.onclick = addNumbers;
+        
+        
+        function addNumbers() {
+            
+            //Siden vi skal legge til tall fra en prompt må vi parse, altså endre det fra String til Int(tall). Hvis ikke legger den det bare etterhverandre.
+            var firstNumber = parseInt(prompt("Skriv inn det første tallet"));
+            var secondNumber = parseInt(prompt("Skriv inn det andre tallet"));
+            
+            //Legger sammen resultatet fra promptene
+            var result = firstNumber + secondNumber;
+            
+            //Henter inn p-tagen der regnestykket skal dukke opp
+            var calculationParagraph = document.getElementById("calculation");
+            //Bruker template literals for å skrive ut regnestykket.
+            calculationParagraph.innerHTML = `${firstNumber} + ${secondNumber} = ${result}`;
+        }
+        
+    </script>
+</html> 

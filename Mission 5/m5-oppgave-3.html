@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 5 - Oppgave 2</title>
+    </head>
+    <body>
+
+        <h1>Hvilke byer i Europa husker du?</h1>
+        
+        <!-- Lager en inputknapp av typen button -->
+        <input type="button" id="city-prompt-btn" value="Legg til by">
+        
+        <!-- en liste der byene brukeren skriver inn skal dukke opp -->
+        <ul id="city-list"></ul>
+        
+    </body>
+    
+    <script>
+        
+        //henter knappen fra html og legger den i en variabel
+        var cityPromptBtn = document.getElementById("city-prompt-btn");
+        
+        //setter knappens onClick-property til å kjøre addCity funksjonen
+        cityPromptBtn.onclick = addCity;
+        
+        
+        function addCity () {
+            
+            //Prompter brukeren og legger det de skriver inn i en variabel.
+           var userCityInput = prompt("Skriv inn en by");
+            
+            //Henter liste-tagen fra html-en så vi kan legge til nye liste elementer i den
+            var cityList = document.getElementById("city-list");
+            
+            //Legger til et <li>-element inni listen. OBS! Her er det viktig å bruke += så man ikke erstatter innholdet, men legger til noe nytt.
+            cityList.innerHTML += `<li>${userCityInput}</li>`;
+            
+        }
+        
+    </script>
+</html> 

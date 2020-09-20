@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 5 - Oppgave 2</title>
+    </head>
+    <style>
+    
+        img {
+            height: 20vw;
+            
+        }
+    </style>
+    <body>
+
+        <h1>Hvilke byer i Europa husker du?</h1>
+        
+        <!-- Fire IMG-tags med ulike superhelter -->
+        <img id="wolverine" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Wolverine_%28James_%27Logan%27_Howlett%29.png/250px-Wolverine_%28James_%27Logan%27_Howlett%29.png">
+        
+        <img id="batman" src="https://i.pinimg.com/originals/b0/68/49/b06849ffe2babd2596d57738efb0c329.jpg">
+        
+        <img id="aquaman" src="https://i.pinimg.com/originals/45/18/ab/4518ab80d50bcb6ecaf86790dde9e9d5.jpg">
+        
+        <img id="black-panther" src="https://www.clipartkey.com/mpngs/m/229-2290078_wakanda-forever-superhero-black-panther-cartoon.png">
+        
+        <!-- En p-tag der infoen skal dukke opp -->
+        <p id="information"></p>
+        
+    </body>
+    
+    <script>
+        
+        //Henter inn img-tagene fra HTML
+        var wolverineImg = document.getElementById("wolverine");
+        var batmanImg = document.getElementById("batman");
+        var aquamanImg = document.getElementById("aquaman");
+        var blackPantherImg = document.getElementById("black-panther");
+        
+        //Setter on-click funksjonen til de ulike superheltene
+        wolverineImg.onclick = showWolverineInfo;
+        batmanImg.onclick = showBatmanInfo;
+        aquaman.onclick = showAquamanInfo;
+        blackPantherImg.onclick = showBlackPantherInfo;
+        
+        //Henter inn p-tagen der informasjonen skal dukke opp
+        
+        var informationParagraph = document.getElementById("information");
+        
+        /*
+            Lager en funksjon for hver superhelt. Som dere ser blir dette mye kode for lite funksjon, senere i semesteret skal vi se på hvordan vi kan rydde dette opp så vi får mer modularisert kode. 
+        */
+        function showWolverineInfo () {
+            
+            informationParagraph.innerHTML = "Wolverine has retractable claws";
+            
+        }
+        
+        function showBatmanInfo () {
+            
+            informationParagraph.innerHTML = "Batman was orphaned at a young age";
+            
+        }
+        
+        function showAquamanInfo () {
+            
+            informationParagraph.innerHTML = "Aquaman can breathe underwater";
+            
+        }
+        
+        function showBlackPantherInfo () {
+            
+            informationParagraph.innerHTML = "Black Panther is from Wakanda";
+            
+        }
+        
+    </script>
+</html> 

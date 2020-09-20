@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 5 - Oppgave 1</title>
+    </head>
+    <body>
+
+        <!-- Lager en inputknapp av typen button -->
+        <input type="button" id="show-story-btn" value="Vis meg en morsom kort historie">
+        
+        <!-- en p-tag historien vår skal dukke opp -->
+        <p id="story-paragraph">Default-melding: Her kommer en morsom historie etter at du har klikket på knappen</p>
+        
+    </body>
+    
+    <script>
+        
+        //henter knappen fra html og legger den i en variabel
+        var showStoryBtn = document.getElementById("show-story-btn");
+        
+        //setter knappens onClick-property til å kjøre showStory funksjonen
+        showStoryBtn.onclick = showStory;
+        
+        
+        //Lager funksjonen showStory 
+        function showStory () {
+            var storyParagraph = document.getElementById("story-paragraph");
+            
+            storyParagraph.innerHTML = "Dette er en morsom, men uavsluttet historie: En katt...";
+        }
+        
+    </script>
+</html> 

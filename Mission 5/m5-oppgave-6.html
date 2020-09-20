@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Mission 5 - Oppgave 6</title>
+    </head>
+    <style>
+        img {
+            width: 20vw;
+        }
+    </style>
+    <body>
+
+        <h1>Klikk og få gaver!</h1>
+        
+        <!-- Lager en inputknapp av typen button -->
+        <input type="button" id="count-btn" value="Go for the win!">
+        
+        <!-- en p-tag der antall ganger brukeren har klikket skal dukke opp -->
+        <h2>Poengsystem</h2>
+        <ul>
+            <li>5 klikk: en liten hilsen</li>
+            <li>10 klikk: en stor hilsen</li>
+            <li>25 klikk: et bilde</li>
+        </ul>
+        
+        <!-- en p-tag der antall ganger brukeren har klikket skal dukke opp -->
+        <p id="btn-clicked-paragraph">Antall ganger klikket: 0</p>
+        
+        <!-- en liste der premiene skal dukke opp-->
+        <ul id="reward-list"></ul>
+        
+    </body>
+    
+    <script>
+        
+        //henter knappen fra html og legger den i en variabel
+        var countBtn = document.getElementById("count-btn");
+        
+        //setter knappens onClick-property til å kjøre clickedBtn funksjonen
+        countBtn.onclick = clickedBtn;
+        
+        //Lager en counter som teller hvor mange ganger brukeren har klikket.
+        var counter = 0;
+        
+        
+        //Funksjonen som skal kjøres hver gang brukeren trykker på knappen
+        function clickedBtn () {
+            
+            //Legger til 1 i counteren siden knappen har blitt trykket på
+            counter++;
+            
+            //Henter p-tagen der antall ganger brukeren har trykket på knappen skal stå
+            var btnClickedParagraph = document.getElementById("btn-clicked-paragraph");
+            
+            //Setter teksten innenfor p-tagen til å bruke tallet fra counteren.
+            btnClickedParagraph.innerHTML = `Antall ganger klikket: ${counter}`;
+            
+            //Henter listen fra HTML så vi kan legge til premier i den
+            var rewardList = document.getElementById("reward-list");
+            
+            //Kontrollstruktur som viser de ulike rewardene, når brukeren har trykket x antall ganger
+            if(counter == 5){
+                
+                //Når brukeren har klikket 5 ganger, vis den lille hilsenen
+                rewardList.innerHTML += `<li>5 klikk: Godt jobbet så langt</li>`;
+                
+            } else if(counter == 10) {
+                
+                //Når brukeren har klikket 10 ganger, vis den store hilsenen
+                rewardList.innerHTML += `<li>10 klikk: Du begynner å komme deg oppover i verden</li>`;
+                
+            } else if(counter == 25) {
+                
+                //Når brukeren har klikket 5 ganger, vis den lille hilsenen
+                rewardList.innerHTML += `<li>25 klikk: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Heraldic_eastern_crown.svg/1200px-Heraldic_eastern_crown.svg.png"></li>`;
+            }
+            
+        }
+        
+    </script>
+</html> 
