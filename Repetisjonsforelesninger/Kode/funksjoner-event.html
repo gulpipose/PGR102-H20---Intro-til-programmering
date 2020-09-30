@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Logiske Operatorer</title>
+    </head>
+    <body>
+        
+        <h1>Klikkespillet</h1>
+        
+        <p>For å vinne må man ha minst 50 poeng, og høyere poengsum enn den andre spilleren</p>
+        
+        <h3>Gi Guro poeng her:</h3>
+        <input id="guro-clicker" type="button" value="Gi Guro poeng">
+        <p id="guro-score-p">Guro har: 0 poeng</p>
+        
+        <p>Vil du jukse? skriv inn hvor mange poeng du vil ha her:</p>
+        <input id="cheat-guro-field" type="text">
+        <input id="cheat-guro-btn" type="button" value="JUKS!">
+        
+        <h3>Gi Rolando poeng her:</h3>
+        <input id="rolando-clicker" type="button" value="Gi Rolando poeng">
+        <p id="rolando-score-p">Rolando har: 0 poeng</p>
+        
+        <h3>Hvem har vunnet!?</h3>
+        <input id="winner-input" type="button" value="Sjekk vinneren">
+        <p id="winner-p"></p>
+        
+    </body>
+    
+    <script>
+        
+    
+        
+        //Er knappen til guro
+        var guroClickBtn = document.getElementById("guro-clicker");
+        //Er knappen til rolando
+        var rolandoClickBtn = document.getElementById("rolando-clicker");
+        
+        //Output-paragraf til guros klikk
+        var guroScoreParagraph = document.getElementById("guro-score-p");
+        //Output-paragraf til rolandos klikk
+        var rolandoScoreParagraph = document.getElementById("rolando-score-p");
+        
+        //Variabler som holder oversikt over hvor mange ganger vi har trykket
+        var gurosScore = 0;
+        var rolandosScore = 0;
+        
+        //setter funksjonen vår til å kjøres når man trykker på guros knapp
+        guroClickBtn.onclick = gurosButtonClicked();
+        rolandoClickBtn.onclick = rolandosButtonClicked;
+        
+        
+        //JUKSING
+        //Hentet fieldet fra html
+        var cheatGuroField = document.getElementById("cheat-guro-field");
+        //Hentet button fra html
+        var cheatGuroBtn = document.getElementById("cheat-guro-btn");
+        
+        cheatGuroBtn.onclick = guroIsCheating ;
+        
+        
+        
+        //Henter vinner knappen
+        var winnerBtn = document.getElementById("winner-input");
+        //Henter vinner paragrafen
+        var winnerParagraph = document.getElementById("winner-p");
+        
+        winnerBtn.onclick = winnerBtnWasClicked;
+
+        function rolandosButtonClicked() {
+            
+            rolandosScore++; 
+            
+            rolandoScoreParagraph.innerHTML =  `Rolando har: ${rolandosScore} poeng`;
+        }
+        
+                       
+        function gurosButtonClicked() {
+            
+            gurosScore++; 
+            
+            guroScoreParagraph.innerHTML =  `Guro har: ${gurosScore} poeng`;
+        }
+        
+        function winnerBtnWasClicked(){
+            
+            if(rolandosScore > 50 && rolandosScore > gurosScore){
+                winnerParagraph.innerHTML = `Rolando har vunnet`;
+                
+            } else if(gurosScore > 50 && gurosScore > rolandosScore){
+                
+                winnerParagraph.innerHTML = `Guro har vunnet`;
+                
+            } else if(gurosScore > 50 && rolandosScore > 50 && gurosScore === rolandosScore) {
+                
+                winnerParagraph.innerHTML = `Det er uavgjort`;
+            
+            } else {
+                
+                winnerParagraph.innerHTML = `Dere er begge tapere :(`;
+            }
+            
+        }
+        
+        function guroIsCheating(){
+            
+        
+            gurosScore += parseInt(cheatGuroField.value);
+            
+            guroScoreParagraph.innerHTML =  `Guro har: ${gurosScore} poeng`;
+        }
+        
+        
+    </script>
+</html> 
