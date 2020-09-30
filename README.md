@@ -10,6 +10,10 @@ Løsningsforslag til oppgaver og materiell fra repetisjonsforelesningene i PGR10
 * [Kode](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/if-else.html)
 
 
+## Repetisjonsforelesninger
+### Andre repetisjonsforelesning - 30.09.2020 
+* [Kode](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/funksjoner-event.html)
+
 ## Løsningsforslag - missions
 
 ### Mission 3 - Variabler, input og output
