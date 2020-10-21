@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Funksjoner</title>
+    </head>
+    <body>
+        <p id="game-score"></p>
+    </body>
+    
+    <script>
+        
+        var gameScore = document.getElementById("game-score");
+    
+        
+        //Userinput for printing gamescore
+        var userNameInput = prompt("Hva er brukerens navn");
+        var userScore = prompt("Hvor mange poeng har brukeren");
+      
+        printGameScore(userNameInput, userScore);
+        
+        
+        //Function that prints out user score
+        function printGameScore(userName, score){
+            
+            gameScore.innerHTML += `${userName} har ${score} poeng<br>`;
+        }
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</html> 

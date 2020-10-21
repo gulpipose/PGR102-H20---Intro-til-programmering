@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Logiske Operatorer</title>
+    </head>
+    <body>
+        
+        <ul id="liste">
+            
+        
+        </ul>
+        
+    
+    </body>
+    
+    <script>
+        
+        var liste = document.getElementById("liste");
+        
+           
+        var frukt = [
+            "Eple",
+            "Banan",
+            "Pære",
+            "Fersken",
+            "Mango"
+        ];
+        
+    
+        for(i = 0; i < frukt.length; i++){
+            liste.innerHTML += `<li>${frukt[i]}</li>`;
+        }
+        
+        
+        
+        var isGuroTired = true;
+        
+        while(isGuroTired == true){
+            
+            var userAnswer = prompt("Er guro trøtt?");
+
+            if(userAnswer === "nei"){
+                isGuroTired = false;
+            }
+        }
+        
+        
+    
+        
+        
+        
+        
+    
+        
+    </script>
+</html> 
