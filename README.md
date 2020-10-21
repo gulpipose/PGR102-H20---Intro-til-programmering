@@ -1,5 +1,6 @@
 # PGR102-H20-Intro-til-programmering
 Løsningsforslag til oppgaver og materiell fra repetisjonsforelesningene i PGR102.
+Opptak av forelesningene ligger under Panopto Video på venstremenyen i emnet i Canvas.
 
 
 ## Repetisjonsforelesninger
@@ -9,9 +10,9 @@ Løsningsforslag til oppgaver og materiell fra repetisjonsforelesningene i PGR10
 * [Slides - pptx](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Slides/Repetisjonsforelesning%20-%201.pptx)
 * [Kode](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/if-else.html)
 
-
-## Repetisjonsforelesninger
 ### Andre repetisjonsforelesning - 30.09.2020 
+* [Slides - pdf](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Slides/Repetisjonsforelesning%20-%202.pdf)
+* [Slides - pptx](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Slides/Repetisjonsforelesning%20-%202.pptx)
 * [Kode](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/funksjoner-event.html)
 
 ## Løsningsforslag - missions
