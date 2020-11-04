@@ -22,7 +22,7 @@ Opptak av forelesningene ligger under Panopto Video på venstremenyen i emnet i 
 * [Kode - Arrays og loops](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/loops-arrays.html)
 * [Kode - Parameteriserte funksjoner](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/funksjoner.html)
 
-### Tredje repetisjonsforelesning - 21.10.2020 
+### Fjerde repetisjonsforelesning - 04.11.2020 
 * [Slides - pdf](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Slides/Repetisjonsforelesning%20-%204.pdf)
 * [Slides - pptx](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Slides/Repetisjonsforelesning%20-%204.pptx)
 * [Kode - Objekter og funksjoner](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/Objekter-funksjoner.html)
