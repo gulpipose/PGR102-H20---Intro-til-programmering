@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Objekter og funksjoner</title>
+    </head>
+    <body>
+            
+        <h3 id="name">Kalkulator</h3>
+        <input id="number1">
+        <br>
+        <input id="operator">
+        <br>
+        <input id="number2">
+        <br>
+        <button onclick="calculate()" id="calculateBtn">Utregn</button>
+        <p id="result"></p>
+
+    </body>
+    
+    <script>
+        var number1Input = document.getElementById("number1");
+        var number2Input = document.getElementById("number2");
+        
+        var operatorInput = document.getElementById("operator");
+        var calculateBtn = document.getElementById("calculateBtn");
+        var resultP = document.getElementById("result");
+        
+        function calculate () {
+            
+            var number1 = parseInt(number1Input.value);
+            var number2 = parseInt(number2Input.value);
+            
+            var result;
+        
+            switch (operatorInput.value) {
+                case "+":
+                    result = number1 + number2
+                    break;
+                case "-":
+                    result = number1 - number2
+                    break;
+                case "*": 
+                    result = number1 * number2
+                    break;
+                case "/":
+                    result = number1 / number2
+                    break
+                default: 
+                    alert("Du har ikke skrevet inn riktig type operator");
+                    console.log("Du har ikke skrevet inn riktig type operator");
+            }
+            resultP.innerHTML = result;
+        }
+        
+        
+
+
+        
+        
+                
+    </script>
+</html> 

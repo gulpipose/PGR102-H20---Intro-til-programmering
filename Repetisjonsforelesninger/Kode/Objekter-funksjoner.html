@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Objekter og funksjoner</title>
+    </head>
+    <body>
+            
+        <h3 id="name"></h3>
+        <p id="age"></p>
+        <p id="gender"></p>
+        <p id="interests"></p>
+        
+        <button onclick="showUser(guro)"></button>
+        <button onclick="showUser(zac)">Zac</button>
+
+    </body>
+    
+    <script>
+        var nameHeader = document.getElementById("name");
+        var ageP = document.getElementById("age");
+        var genderP = document.getElementById("gender");
+        var interestsP = document.getElementById("interests");
+        
+        var guroBtn = document.getElementById("guroBtn");
+        
+        var guro = { 
+            name: "Guro",
+            age: 25, 
+            gender: "Kvinne",
+            interests: "Filmer og mat"
+        };
+        
+        var zac = {
+            name: "Zac",
+            age: 33,
+            gender: "male",
+            interests: "Trening, Miljøet og mat"
+        };
+
+
+        function showUser (user) {
+            nameHeader.innerHTML = user.name;
+            ageP.innerHTML = user.age;
+            genderP.innerHTML = user.gender;
+            interestsP.innerHTML = user.interests;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+                
+    </script>
+</html> 
