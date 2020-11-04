@@ -19,8 +19,14 @@ Opptak av forelesningene ligger under Panopto Video på venstremenyen i emnet i 
 ### Tredje repetisjonsforelesning - 21.10.2020 
 * [Slides - pdf](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Slides/Repetisjonsforelesning%20-%203.pdf)
 * [Slides - pptx](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Slides/Repetisjonsforelesning%20-%203.pptx)
-* [Kode - arrays og loops](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/loops-arrays.html)
-* [Kode - parameteriserte funksjoner](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/funksjoner.html)
+* [Kode - Arrays og loops](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/loops-arrays.html)
+* [Kode - Parameteriserte funksjoner](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/funksjoner.html)
+
+### Tredje repetisjonsforelesning - 21.10.2020 
+* [Slides - pdf](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Slides/Repetisjonsforelesning%20-%204.pdf)
+* [Slides - pptx](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Slides/Repetisjonsforelesning%20-%204.pptx)
+* [Kode - Objekter og funksjoner](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/objekter-funksjoner.html)
+* [Kode - Enkel kalkulator](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/kalkulator.html)
 
 ## Løsningsforslag - missions
 
