@@ -28,6 +28,11 @@ Opptak av forelesningene ligger under Panopto Video på venstremenyen i emnet i 
 * [Kode - Objekter og funksjoner](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/Objekter-funksjoner.html)
 * [Kode - Enkel kalkulator](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Repetisjonsforelesninger/Kode/kalkulator.html)
 
+### Femte repetisjonsforelesning - 27.11.2020 
+* [Oppgave 1 fra fjorårets eksamen](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Eksamen%20oppgave%201.html)
+* [Oppgave 2 fra fjorårets eksamen](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Eksamen%20oppgave%202.html)
+* [Oppgave 3 fra fjorårets eksamen](https://github.com/gulpipose/PGR102-H20-Intro-til-programmering/blob/main/Eksamen%20oppgave%203.html)
+
 ## Løsningsforslag - missions
 
 ### Mission 3 - Variabler, input og output
