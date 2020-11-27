@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Eksamen oppgave 2 </title>
+    </head>
+    <body>
+        <input id="random-button" type="button" value="Vis tilfeldig superhelt">
+        <div id="container"></div>
+    </body>
+    
+    <script>
+        /*HTML-elements*/
+        var randomButton = document.getElementById("random-button");
+        
+        var container = document.getElementById("container");
+        
+        var superheroes = [
+            {
+                name: "Supermann",
+                imageSrc: `standard_compressed_supermann.jpg`,
+                weakness: "Kryptonitt" 
+            },
+            {
+                name: "Catwoman",
+                imageSrc: "Catwoman.jpg",
+                weakness: "pingviner"
+            },
+            {
+                name: 'Spiderman',
+                imageSrc: "spiderman.jpg",
+                weakness: "bugspray"
+            }
+        ];
+        
+        randomButton.onclick = showRandomSuperHero;
+        
+        function showRandomSuperHero () {
+            //Index of random superhero
+            var i = getRandomNumber(superheroes.length);
+            
+            //Denne variabelen inneholder det objektet vi henter.
+            var superhero = superheroes[i];
+            var weakness = superhero.weakness;
+            
+            container.innerHTML = `Name: ${superhero.name}`;
+            container.innerHTML += `<br><img style="width: 100px" src="${superhero.imageSrc}">`;
+            
+            
+            switch(weakness) {
+                case "Kryptonitt":
+                     container.innerHTML += `<p style="color: green">
+                        Kryptonitt er svakheten til Supermann!
+                    </p>`;
+                    break;
+                case "pingviner":
+                    container.innerHTML += `<p style="color: aqua">
+                        Pingviner er svakheten til Catwoman
+                    </p>`;
+                    break;
+                case "bugspray":
+                    container.innerHTML += `<p style="color: red">
+                        Bugspray er svakheten til Spiderman
+                    </p>`;
+                    break;
+            }
+            
+        }
+    
+        function getRandomNumber(numberOfSuperheroes){
+            return Math.floor(Math.random() * numberOfSuperheroes);
+        }
+        
+    </script>
+</html> 

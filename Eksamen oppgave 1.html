@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Eksamen oppgave 1 </title>
+    </head>
+    <body>
+        <h1>Registrer deg</h1>
+        <label>Din alder</label>
+        <input id="age-input" type="text">
+        <input id="register-btn" value="Registrer" type="button">
+        
+        <p id="response"></p>
+        
+    </body>
+    
+    <script>
+        /*HTML-elements*/
+        
+        var ageInput = document.getElementById("age-input");
+        
+        var registerBtn = document.getElementById("register-btn");
+        
+        var response = document.getElementById("response");
+        
+        //Sets the button to run the register function
+        registerBtn.onclick = register;
+        
+        function register () {
+            //Henter brukerens alder fra input-feltet
+            var userAge = ageInput.value;
+            
+            if(userAge < 18){
+                response.innerHTML = `<p style="color: red">Du er kun ${userAge} og har dermed ikke lov til å bruke denne applikasjonen</p>`
+            } else if(userAge >= 18) {
+                response.innerHTML = `<p style="color: green">Du er ${userAge}, velkommen! :)</p>`
+            } else {
+                alert("Skriv in et tall!");
+            }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</html> 

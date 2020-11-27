@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Eksamen oppgave 2 </title>
+    </head>
+    <body>
+        <h1>Franske Oster</h1>
+        <ul id="cheese-list">
+        </ul>
+    </body>
+    
+    <script>
+        /*HTML-elements*/
+ 
+        var cheeseList = document.getElementById("cheese-list");
+        
+        
+        var cheeseNames = ["Camembert", "Norvegia", "Roquefort", "Norzola", "Pultost", "Chevre" ];
+        
+        var cheesePrices = [249, 149, 399, 199, 79, 99];
+        
+        var cheeseNamesLength = cheeseNames.length;
+        
+        //Loops through the cheese-names and prices and adds list elements for each cheese. 
+        for(var i = 0; i < cheeseNamesLength; i++){
+            
+            //Første gang: 249;
+            var cheesePrice = cheesePrices[i];
+            
+            //Første gang: cheeseNames[i] = "Camembert"
+            cheeseList.innerHTML += `<li>${cheeseNames[i]}: ${cheesePrice}(VIP-pris: ${getVIPPrice(cheesePrice)})</li>`;
+    
+            
+        }
+        
+        
+        function getVIPPrice(regularPrice) { 
+                
+            var vipPrice = regularPrice/2;
+            return vipPrice;
+        }
+        
+        
+        
+        
+    </script>
+</html> 
